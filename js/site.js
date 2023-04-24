@@ -26,19 +26,17 @@ function getValues() {
 
 function calculateInputs(values) {
 
-	
-	let paymentArray = [];
 	let totalArray = [];
-
-
-	let loanAmount = values.loanAmount;
+	let paymentArray = [];
+	
 	let termMonths = values.termMonths;
 	let interestRate = values.interestRate;
+	let loanAmount = values.loanAmount;
 
 	let totalMonthlyPayment = (loanAmount * (interestRate / 1200)) / (1 - (1 + interestRate / 1200) ** -termMonths);
 	let remainingBalance = loanAmount;
-	let totalInterest = 0;
 	let totalPrincipal = 0;
+	let totalInterest = 0;
 	let totalCost = 0;
 
 
