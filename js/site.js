@@ -103,6 +103,8 @@ function displayPaymentsTable(paymentArray) {
 	}
 }
 
+
+
 function displayTotals(totalArray) {
 	
    let totalPrincipal = totalArray.slice(0);
@@ -129,4 +131,6 @@ function displayTotals(totalArray) {
 
 	document.getElementById("monthlyPayment").innerText = monthlyPayment;
 }
+
+
 
