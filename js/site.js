@@ -120,13 +120,15 @@ function displayPaymentsTable(paymentArray) {
 
 function displayTotals(totalArray) {
 
-	 let formatter = new Intl.NumberFormat('en-US', {
-	 	style: 'currency', currency: 'USD',
+	 let formatter = new Intl.NumberFormat('en-US', 
+	 {
+	 	style: 'currency', 
+		currency: 'USD',
 	 });
 	
-   	let totalPrincipal = formatter.format(totalArray.slice(0));
-	let totalInterest = formatter.format(totalArray.slice(0));
-	let totalCost = formatter.format(totalArray.slice(0));
+   	let totalPrincipal = formatter.format(totalArray);
+	let totalInterest = formatter.format(totalArray);
+	let totalCost = formatter.format(totalArray);
 
 
 	let principal = totalArray[totalPrincipal.length - 1];
