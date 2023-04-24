@@ -11,6 +11,19 @@ function getValues() {
 	termMonths = parseInt(termMonths);
 	interestRate = parseFloat(interestRate).toFixed(1);
 
+	
+	// WORKING ON THIS SWEET ALERT //
+	// if (!isNAN(loanAmount) && !isNAN(termMonths) && !isNAN(interestRate) && loanAmount > 0 && termMonths > 0 && interestRate > 0) {
+
+	// }else {
+	// 	Swal.fire({
+	// 		icon: 'error',
+	// 		backdrop: false,
+	// 		title: 'Uh oh!',
+	// 		text: 'Please ener a valid number'
+	// 	})
+	// }
+
 	let values = {
 		loanAmount: loanAmount,
 		termMonths: termMonths,
