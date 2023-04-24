@@ -23,9 +23,9 @@
 
 </head>
 
-<body>
+<body class="bg-dark-subtle">
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-primary id=" mainNav">
+		<nav class="navbar navbar-expand-lg navbar-light border border-secondary"  id=" mainNav">
 			<div class="container">
 				<a class="navbar-brand" href="index.html">
 					<img src="img/GH Logo.png" height="30">
@@ -66,7 +66,7 @@
 	<main class="container mt-4">
 		<!--Loan Input Section-->
 		<div class="row row-cols-1 row-cols-md-2">
-			<div class="col">
+			<div class="col bg-primary-subtle border border-secondary border-end-0">
 				<h5>Enter Mortgage Information </h5>
 				<form class="cols-4">
 					<div>
@@ -97,24 +97,23 @@
 			</div>
 
 			<!--Total Payments Section-->
-			<div class="col">
+			<div class="col bg-primary-subtle border border-secondary border-start-0">
 				<br>
-				<h5>Monthly Payment Amount:
+				<h5 class="p-2">Monthly Payment Amount:
 					<div class=" bg-body-secondary" id="monthlyPayment">
-						
 					</div>
 				</h5>
-				<h5>Total Principle:
+				<h5 class="p-2">Total Principle:
 					<div class=" bg-body-secondary" id="totalPrinciple">
 						
 					</div>
 				</h5>
-				<h5>Total Interest:
+				<h5 class="p-2">Total Interest:
 					<div class=" bg-body-secondary" id="totalInterest">
 						
 					</div>
 				</h5>
-				<h5>Total Cost:
+				<h5 class="p-2">Total Cost:
 					<div class=" bg-body-secondary" id="totalCost">
 						
 					</div>
@@ -127,7 +126,7 @@
 			<h3 class="mt-4">Results</h3>
 			<hr>
 			<div class="table-responsive">
-				<table class="table table-hover table-striped">
+				<table class="table table-hover table-striped border border-secondary">
 					<thead class="table-primary">
 						<tr>
 							<th>Month</th>
@@ -138,7 +137,7 @@
 							<th>Balance</th>
 						</tr>
 					</thead>
-					<tbody id="monthTable">
+					<tbody id="monthTable" class="">
 						<tr>
 							<td></td>
 							<td></td>
@@ -156,20 +155,20 @@
 
 
 
-	<template id="tableRowTemplate">
+	<template id="tableRowTemplate" class="table-responsive">
 		<tr>
-			<td data-id="month"></td>
-			<td data-id="payment"></td>
-			<td data-id="principal"></td>
-			<td data-id="interest"></td>
-			<td data-id="totalInterest"></td>
-			<td data-id="balance"></td>
+			<td class="table-primary " data-id="month"></td>
+			<td class="table-secondary" data-id="payment"></td>
+			<td class="table-success" data-id="principal"></td>
+			<td class="table-danger" data-id="interest"></td>
+			<td class="table-warning" data-id="totalInterest"></td>
+			<td class="table-info" data-id="balance"></td>
 		</tr>
 	</template>
 
 
 
-	<footer class="container-fluid mt-2">
+	<footer class="container-fluid mt-2 ">
 
 		<div class="p-2 row row-cols-1 row-cols-md-3 align-items-center text-center">
 			<div class="col">

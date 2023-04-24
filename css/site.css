@@ -61,6 +61,10 @@ footer {
     flex-shrink: 0;
 }
 
+nav {
+    background: var(--gh-primary-color)
+}
+
 #mainNav {
 	background: var(--gh-background-color);
 }
