@@ -79,7 +79,8 @@ function calculateInputs(values) {
 }
 	
 function displayPaymentsTable(paymentArray) {
-	//const eventTable = document.getElementById("monthlyTable");
+	
+	
 	const monthTemplate = document.getElementById("tableRowTemplate");
 
 	monthTable.innerHTML = "";
