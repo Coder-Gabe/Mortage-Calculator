@@ -70,7 +70,7 @@ function calculateInputs(values) {
 			principal: principalPayment.toFixed(2),
 			interest: interestPayment.toFixed(2),
 			totalInterest: totalInterest.toFixed(2),
-			balance: remainingBalance.toFixed(2)
+			balance: Math.abs(remainingBalance.toFixed(2))
 		};
 
 		let totalValues = {
@@ -119,6 +119,10 @@ function displayPaymentsTable(paymentArray) {
 
 
 function displayTotals(totalArray) {
+
+	//  let formatter = new Intl.NumberFormat('en-US', {
+	//  	style: 'currency', currency: 'USD',
+	//  });
 	
    let totalPrincipal = totalArray.slice(0);
 	let totalInterest = totalArray.slice(0);
@@ -128,6 +132,8 @@ function displayTotals(totalArray) {
 	let principal = totalArray[totalPrincipal.length - 1];
 	let interest = totalArray[totalInterest.length - 1];
 	let cost = totalArray[totalCost.length - 1];
+
+	
 
 
 	document.getElementById("totalPrinciple").innerText = principal.totalPrincipal;
