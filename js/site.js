@@ -126,16 +126,15 @@ function displayTotals(totalArray) {
 		currency: 'USD',
 	 });
 	
-   	let totalPrincipal = formatter.format(totalArray);
-	let totalInterest = formatter.format(totalArray);
-	let totalCost = formatter.format(totalArray);
+   	let totalPrincipal = (totalArray);
+	let totalInterest = (totalArray);
+	let totalCost = (totalArray);
 
 
 	let principal = totalArray[totalPrincipal.length - 1];
 	let interest = totalArray[totalInterest.length - 1];
 	let cost = totalArray[totalCost.length - 1];
 
-	
 
 
 	document.getElementById("totalPrinciple").innerText = principal.totalPrincipal;
@@ -148,7 +147,7 @@ function displayTotals(totalArray) {
 
 	let monthlyPayment = (document.getElementById("totalCost").innerText = cost.totalCost) / termMonths;
 
-	monthlyPayment = monthlyPayment.toFixed(2)
+	monthlyPayment = formatter.format(monthlyPayment.toFixed(2));
 
 	document.getElementById("monthlyPayment").innerText = monthlyPayment;
 }
